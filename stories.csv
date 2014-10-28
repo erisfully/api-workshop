@@ -1,0 +1,45 @@
+Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Description,URL,Owned By,Comment,Comment,Comment
+70776286,"As a user, I can view all of my projects","",,,,feature,2,unstarted,"May 6, 2014",,,Jeff Taggart,"Given I'm on the homepage
+When I click on ""View Projects""
+I see a list of all projects
+
+---
+Use your own API token. Make sure you don't commit it (dotenv-rails). (https://www.pivotaltracker.com/help/api#Basics)",https://www.pivotaltracker.com/story/show/70776286,,"This is a test comment on the first story (Jeff Taggart - May 6, 2014)","This is a second test comment on the first story (Jeff Taggart - May 6, 2014)"
+70776396,"As a user, I can view all of the stories for a project","",,,,feature,1,unstarted,"May 6, 2014",,,Jeff Taggart,"Given I'm go to the project list
+When I click on a project
+I see a list of all of that projects stories",https://www.pivotaltracker.com/story/show/70776396,
+70776466,"As a user, I can view Tracker comments for a project","",,,,feature,2,unstarted,"May 6, 2014",,,Jeff Taggart,"When I'm viewing a project
+Then I see all of the Tracker comments for that project across all stories
+",https://www.pivotaltracker.com/story/show/70776466,,"This is a comment on the comment story (Jeff Taggart - May 6, 2014)","Commit by Jeff Taggart
+https://github.com/jetaggart/tracker-api-example/commit/9bb903237447a032c80ba87cd6437c6769dfcd8c
+
+[#70776466] Implement comments on projects (Jeff Taggart - May 6, 2014)","comment
+ (Hunter Gillane - May 9, 2014)"
+70780910,"As a user, I can see the GitHub comments on a Tracker comment with a commit associated","",,,,feature,2,unstarted,"May 6, 2014",,,Jeff Taggart,"When I'm viewing a project
+And there is a comment that came from the GitHub integration
+Then I see the GitHub comments below the Tracker comment
+
+---
+You must use basic authentication (https://developer.github.com/v3/#basic-authentication) for this otherwise we'll go over our rate limit (https://developer.github.com/v3/#rate-limiting) for GitHub.  ",https://www.pivotaltracker.com/story/show/70780910,,"Commit by Jeff Taggart
+https://github.com/jetaggart/tracker-api-example/commit/bb670aa13fbd5228871fd1170f047b4e12ccd555
+
+[#70780910] Added tracker comments for all stories (Jeff Taggart - May 6, 2014)"
+70781384,"As a user, I can post a new GitHub comment for the a tracker commit comment (basic auth)","",,,,feature,3,unstarted,"May 6, 2014",,,Jeff Taggart,"Given I'm viewing a project
+And there is a commit comment
+When I click on ""Add Comment""
+And I fill out the form
+Then I see my GitHub comment added to the commit in GitHub
+And displayed on the project page",https://www.pivotaltracker.com/story/show/70781384,
+70783182,"As a user, I can authenticate with GitHub","",,,,feature,2,unstarted,"May 6, 2014",,,Jeff Taggart,"When I visit the homepage
+And click on ""Log in with GitHub""
+Then I'm logged in with github
+And I see my username in the nav bar
+
+Please use omniauth gem!
+https://github.com/intridea/omniauth",https://www.pivotaltracker.com/story/show/70783182,
+70819696,"As an authenticated user, I can post a commit comment for my GitHub account","",,,,feature,3,unstarted,"May 7, 2014",,,Jeff Taggart,"Given I'm authenticated with GitHub
+And I'm viewing a project
+When I click on ""Add Comment""
+And I fill out the Form
+Then I see my GitHub comment added to the commit created by my account
+And I see it on the project page",https://www.pivotaltracker.com/story/show/70819696,
