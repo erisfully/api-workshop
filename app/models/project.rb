@@ -6,6 +6,10 @@ class Project
     @name = project_json["name"]
   end
 
+  def find_by_name(name)
+    
+  end
+
   def self.get_projects
 
     conn = Faraday.new(:url => 'https://www.pivotaltracker.com') do |faraday|
